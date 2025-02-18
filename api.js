@@ -3,10 +3,12 @@
 const express = require('express');
 const morgan = require('morgan');
 const fs = require('fs');
+const serverless = require("serverless-http");
 
 // CREATE EXPRESS APP
 // Here you should create your Express app:
 const app = express();
+const router = Router();
 
 
 // MIDDLEWARE
@@ -54,6 +56,10 @@ app.use((req, res, next)=>{
 
 // START THE SERVER
 // Make your Express server listen on port 5005:
-app.listen(5005, () => {
-    console.log("Server listening in port 5005");
-})
+//app.listen(5005, () => {
+ //   console.log("Server listening in port 5005");
+//})
+
+app.use("/api/", router);
+
+export const handler = serverless(app);
