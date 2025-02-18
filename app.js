@@ -20,6 +20,10 @@ app.use(morgan("dev"));
 
 // ROUTES
 // Start defining your routes here:
+app.get("/", (req, res)=> {
+    res.sendFile(__dirname + "/views/home.html");
+});
+
 app.get("/blog", (req, res)=> {
     res.sendFile(__dirname + "/views/blog.html");
 });
@@ -38,13 +42,15 @@ app.get("/api/articles", (req, res)=>{
     });
 })
 
-// app.get((req, res, next) => {
-//     res.status(404).sendFile(__dirname + "/views/not-found.html");
-// })
+// this didn't work for me
+ app.get((req, res, next) => {
+     res.status(404).sendFile(__dirname + "/views/not-found.html");
+ })
 
-app.get('*', (req, res) => {
+//this worked for me:
+app.use((req, res, next)=>{
     res.status(404).sendFile(__dirname + "/views/not-found.html");
-})
+});
 
 // START THE SERVER
 // Make your Express server listen on port 5005:
