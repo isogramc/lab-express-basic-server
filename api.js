@@ -4,11 +4,11 @@ const express = require('express');
 const morgan = require('morgan');
 const fs = require('fs');
 const serverless = require("serverless-http");
+const router = express.Router();
 
 // CREATE EXPRESS APP
 // Here you should create your Express app:
 const app = express();
-const router = Router();
 
 
 // MIDDLEWARE
@@ -22,22 +22,22 @@ app.use(morgan("dev"));
 
 // ROUTES
 // Start defining your routes here:
-app.get("/", (req, res)=> {
+router.get("/", (req, res)=> {
     res.sendFile(__dirname + "/views/home.html");
 });
 
-app.get("/blog", (req, res)=> {
+router.get("/blog", (req, res)=> {
     res.sendFile(__dirname + "/views/blog.html");
 });
 
-app.get("/api/projects", (req, res)=>{
+router.get("/api/projects", (req, res)=>{
     fs.readFile(__dirname + "/data/projects.json", (err, json) => {
         let obj = JSON.parse(json);
         res.json(obj);
     });
 })
 
-app.get("/api/articles", (req, res)=>{
+router.get("/api/articles", (req, res)=>{
     fs.readFile(__dirname + "/data/articles.json", (err, json) => {
         let obj = JSON.parse(json);
         res.json(obj);
@@ -45,7 +45,7 @@ app.get("/api/articles", (req, res)=>{
 })
 
 // this didn't work for me
- app.get((req, res, next) => {
+ router.get((req, res, next) => {
      res.status(404).sendFile(__dirname + "/views/not-found.html");
  })
 
@@ -60,6 +60,5 @@ app.use((req, res, next)=>{
  //   console.log("Server listening in port 5005");
 //})
 
-app.use("/api/", router);
-
-export const handler = serverless(app);
+app.use('/.netlify/functions/api', router);
+module.exports.handler = serverless(app);
