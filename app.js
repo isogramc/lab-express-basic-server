@@ -43,14 +43,14 @@ app.get("/api/articles", (req, res)=>{
 })
 
 // this didn't work for me
- app.get((req, res, next) => {
+ app.get("/*",(req, res, next) => {
      res.status(404).sendFile(__dirname + "/views/not-found.html");
  })
 
 //this worked for me:
-app.use((req, res, next)=>{
-    res.status(404).sendFile(__dirname + "/views/not-found.html");
-});
+// app.use((req, res, next)=>{
+//     res.status(404).sendFile(__dirname + "/views/not-found.html");
+// });
 
 // START THE SERVER
 // Make your Express server listen on port 5005:
