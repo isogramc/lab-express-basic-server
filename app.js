@@ -54,6 +54,6 @@ app.use((req, res, next)=>{
 
 // START THE SERVER
 // Make your Express server listen on port 5005:
-app.listen(5005, () => {
-    console.log("Server listening in port 5005");
+app.listen(process.env.PORT, () => {
+    console.log("Server listening in port ${process.env.PORT}");
 })
