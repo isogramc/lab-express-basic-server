@@ -42,7 +42,6 @@ app.get("/api/articles", (req, res)=>{
     });
 })
 
-// this didn't work for me
  app.get("/*",(req, res, next) => {
      res.status(404).sendFile(__dirname + "/views/not-found.html");
  })
