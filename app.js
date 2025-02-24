@@ -1,3 +1,5 @@
+let dotenv = require('dotenv').config()
+console.log(dotenv);
 // IMPORT PACKAGES
 // Here you should import the required packages for your Express app: `express` and `morgan`
 const express = require('express');
