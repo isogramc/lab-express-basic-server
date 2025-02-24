@@ -1,10 +1,14 @@
-let dotenv = require('dotenv').config()
-console.log(dotenv);
+
 // IMPORT PACKAGES
 // Here you should import the required packages for your Express app: `express` and `morgan`
 const express = require('express');
 const morgan = require('morgan');
 const fs = require('fs');
+
+let dotenv = require('dotenv').config()
+console.log(dotenv);
+
+const path = require('path');
 
 // CREATE EXPRESS APP
 // Here you should create your Express app:
@@ -23,29 +27,29 @@ app.use(morgan("dev"));
 // ROUTES
 // Start defining your routes here:
 app.get("/", (req, res)=> {
-    res.sendFile(__dirname + "/views/home.html");
+    res.sendFile(path.join(__dirname + "/views/home.html"));
 });
 
 app.get("/blog", (req, res)=> {
-    res.sendFile(__dirname + "/views/blog.html");
+    res.sendFile(path.join(__dirname + "/views/blog.html"));
 });
 
 app.get("/api/projects", (req, res)=>{
-    fs.readFile(__dirname + "/data/projects.json", (err, json) => {
+    fs.readFile(path.join(__dirname + "/data/projects.json"), (err, json) => {
         let obj = JSON.parse(json);
         res.json(obj);
     });
 })
 
 app.get("/api/articles", (req, res)=>{
-    fs.readFile(__dirname + "/data/articles.json", (err, json) => {
+    fs.readFile(path.join(__dirname + "/data/articles.json"), (err, json) => {
         let obj = JSON.parse(json);
         res.json(obj);
     });
 })
 
  app.get("/*",(req, res, next) => {
-     res.status(404).sendFile(__dirname + "/views/not-found.html");
+     res.status(404).sendFile(path.join(__dirname + "/views/not-found.html"));
  })
 
 //this worked for me:
