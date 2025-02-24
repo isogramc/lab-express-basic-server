@@ -2,33 +2,33 @@
     {
         "title": "Adventures of Pixelcat",
         "description": "Simple arcade style escape game, built with vanilla JavaScript, HTML, and CSS.",
-        "image": "https://private-user-images.githubusercontent.com/2439665/392111975-b36e7852-c9b7-47fd-9e78-69e3e7eeac93.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk5MTQyNzksIm5iZiI6MTczOTkxMzk3OSwicGF0aCI6Ii8yNDM5NjY1LzM5MjExMTk3NS1iMzZlNzg1Mi1jOWI3LTQ3ZmQtOWU3OC02OWUzZTdlZWFjOTMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMThUMjEyNjE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDU1MTFmNzAwM2M3MjM4ZmNlYjE1YjIzMzYzMmM0OWMwOTFmNjYxYzU1MWM3YzkzODBjNmE1NTlmN2JlMWZiZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.49VALH7T-5sIr0P1pzkmeb68HbDM7C1x6HW_7ELyLN8",
-        "github": "https://github.com/isogramc/pixelcat",
-        "deployed": "https://isogramc.github.io/pixelcat/",
+        "image": "//private-user-images.githubusercontent.com/2439665/392111975-b36e7852-c9b7-47fd-9e78-69e3e7eeac93.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA0MjgyNjQsIm5iZiI6MTc0MDQyNzk2NCwicGF0aCI6Ii8yNDM5NjY1LzM5MjExMTk3NS1iMzZlNzg1Mi1jOWI3LTQ3ZmQtOWU3OC02OWUzZTdlZWFjOTMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIyNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMjRUMjAxMjQ0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGMwMGEzZTI0YzljYWE4NTQ1ZWFhZjNmYmYyNDI1ODk0OTE5ZDFkYTgzNDJhNjI2Y2U0NDFlYzkxMzk4OGJhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.65pFMJ30y3PODloCrwZcpllRjWnsO3C2AYNxrIhKU1I",
+        "github": "//github.com/isogramc/pixelcat",
+        "deployed": "//isogramc.github.io/pixelcat/",
         "techStack": ["HTML", "CSS", "JavaScript"]
     },
     {
         "title": "Music Clip Scrapbook",
         "description": "Bootcamp group project. Full stack application built with React, JSON Server, and Tone.js",
-        "image": "https://github.com/isogramc/music-clip-scrap-book/blob/main/src/assets/PianoApp.png",
-        "github": "https://github.com/isogramc/music-clip-scrap-book",
-        "deployed": "https://piano-tutor.netlify.app/",
+        "image": "//raw.githubusercontent.com/isogramc/music-clip-scrap-book/main/src/assets/PianoApp.png",
+        "github": "//github.com/isogramc/music-clip-scrap-book",
+        "deployed": "//piano-tutor.netlify.app/",
         "techStack": ["React", "Node", "JSON Server", "Tone.js"]
     },
     {
         "title": "Javascript Quiz Project",
         "description": "Bootcamp group mini project. A simple Javascript quiz game played in the browser. OOP principles and the DOM. With Jasmine tests implemented",
-        "image": "https://github.com/isogramc/javascript-quiz-project/blob/master/quiz.png",
-        "github": "https://github.com/isogramc/javascript-quiz-project",
-        "deployed": "https://isogramc.github.io/javascript-quiz-project/",
+        "image": "//raw.githubusercontent.com/isogramc/javascript-quiz-project/refs/heads/master/quiz.png",
+        "github": "//github.com/isogramc/javascript-quiz-project",
+        "deployed": "//isogramc.github.io/javascript-quiz-project/",
         "techStack": ["HTML", "CSS", "Javascript", "JASMINE"]
     },    
     {
         "title": "Nutrition Tracking app",
         "description": "Recipe Website Demo using the Free Recipe API.",
-        "image": "https://res.cloudinary.com/dwyipecoa/image/upload/v1737447320/logo_xbvghd.png",
-        "github": "https://github.com/isogramc/lab-react-ironnutrition-vite",
-        "deployed": "https://my-recipe-app-demo.netlify.app/",
+        "image": "//res.cloudinary.com/dwyipecoa/image/upload/v1737447320/logo_xbvghd.png",
+        "github": "//github.com/isogramc/lab-react-ironnutrition-vite",
+        "deployed": "//my-recipe-app-demo.netlify.app/",
         "techStack": ["React", "REST", "API"]
     }
 ]
